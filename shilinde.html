@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biashara Mtandaoni</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f3f3f3;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0066cc;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      flex: 1 1 30%;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 10px;
+      background-color: #0066cc;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Karibu Biashara Yetu Mtandaoni</h1>
+  <p>Nunua kwa urahisi kutoka nyumbani kwako!</p>
+</header>
+
+<nav>
+  <a href="#bidhaa">Bidhaa</a>
+  <a href="#huduma">Huduma</a>
+  <a href="#wasiliana">Wasiliana Nasi</a>
+</nav>
+
+<div class="container">
+  <section id="bidhaa" class="section">
+    <h2>Bidhaa Zetu</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Bidhaa 1">
+        <h3>Kiatu cha Kisasa</h3>
+        <p>Tsh 35,000 - Kiatu kizuri kwa matumizi ya kila siku.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Bidhaa 2">
+        <h3>Saa ya Mkono</h3>
+        <p>Tsh 25,000 - Saa ya kifahari kwa wanaume na wanawake.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Bidhaa 3">
+        <h3>Begani ya Laptop</h3>
+        <p>Tsh 40,000 - Begi imara ya kubeba laptop zako salama.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="huduma" class="section">
+    <h2>Huduma Zetu</h2>
+    <p>Tunatoa huduma bora za usafirishaji, malipo kwa njia mbalimbali kama M-Pesa, Tigo Pesa na benki. Pia tunatoa punguzo kwa wateja wa kudumu.</p>
+  </section>
+
+  <section id="wasiliana" class="section">
+    <h2>Wasiliana Nasi</h2>
+    <form>
+      <label for="jina">Jina lako</label>
+      <input type="text" id="jina" name="jina" required>
+
+      <label for="barua">Barua Pepe</label>
+      <input type="email" id="barua" name="barua" required>
+
+      <label for="ujumbe">Ujumbe</label>
+      <textarea id="ujumbe" name="ujumbe" rows="5" required></textarea>
+
+      <button type="submit">Tuma Ujumbe</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 Biashara Mtandaoni. Haki zote zimehifadhiwa.</p>
+</footer>
+
+</body>
+</html>
